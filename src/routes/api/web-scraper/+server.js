@@ -18,7 +18,7 @@ export async function POST({ request }) {
 		const imageURL = await uploadImage(screenshot, url);
 		return json({ success: true, imageURL });
 	} catch (/** @type {any}*/ e) {
-		return json({ success: false, error: e?.message });
+		return json({ success: false, error: e?.message});
 	}
 }
 
